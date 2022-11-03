@@ -361,7 +361,7 @@ sleep(0.5)
 aria2 = ariaAPI(ariaClient(host="http://localhost", port=6800, secret=""))
 
 def get_client():
-    return qbClient(host="localhost", port=8090, VERIFY_WEBUI_CERTIFICATE=False, REQUESTS_ARGS={'timeout': (30, 60)})
+    return qbClient(host="localhost", port=2020, VERIFY_WEBUI_CERTIFICATE=False, REQUESTS_ARGS={'timeout': (30, 60)})
 
 def aria2c_init():
     try:
